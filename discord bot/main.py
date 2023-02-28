@@ -355,7 +355,7 @@ async def updateWeb(ctx):
 			test.write(enter)
 
 
-#does different actions based on different messages in chat
+#does different actions based on different messages in chat, also makes sure that the bot is in the right chat
 @bot.event
 async def on_message(message):
 
@@ -363,20 +363,6 @@ async def on_message(message):
 	if message.author == bot.user:
 		return
 
-	if msg == 'N':
-		await message.delete()
-		await message.channel.send("stop it")
-	if msg == 'n':
-		await message.delete()
-		await message.channel.send("stop it")
-	if msg == 'G':
-		await message.delete()
-		await message.channel.send("stop it")
-	if msg == 'g':
-		await message.delete()
-		await message.channel.send("stop it")
-
-		print('here')
 	if message.channel.id != 449748048734846976:
 		return
 	else:

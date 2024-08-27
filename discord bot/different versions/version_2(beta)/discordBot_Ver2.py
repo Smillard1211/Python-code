@@ -561,7 +561,7 @@ class main(commands.Cog):
                 if key == 555:
                     user = 'loss'
                 elif key == 210457357040353280:
-                    user = 'Mother'
+                    user = 'Owner'
                 else:
                     user = await bot.fetch_user(key)
                     user = user.name

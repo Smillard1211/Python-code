@@ -346,7 +346,7 @@ async def updateWeb(ctx):
 				print('here')
 				user = 'loss'
 			elif key == 210457357040353280:
-				user = 'Father'
+				user = 'Owner'
 			else:
 				user = await bot.fetch_user(key)
 				user = user.name
